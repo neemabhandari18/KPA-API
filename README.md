@@ -10,26 +10,26 @@ KPA stands for **Key Performance Area** – specific goals or performance indica
 
 ---
 
-## 🚀 Features
+## Features
 
-- ✅ Add a new KPA  
-- 📋 Get all KPAs  
-- 🔍 Get a KPA by ID  
-- ✏️ Update a KPA  
-- ❌ Delete a KPA  
+- Add a new KPA  
+- Get all KPAs  
+- Get a KPA by ID  
+- Update a KPA  
+- Delete a KPA  
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 - Language: **Python 3**
 - Framework: **Flask**
 
 ---
 
-## 🧑‍💻 How to Run
+##  How to Run
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/kpa-api.git
+   git clone https://github.com/neemabhandari18/KPA-API
    cd kpa-api
