@@ -1,81 +1,135 @@
-# KPA-API
 
-# KPA Management API
+#  KPA-API (Key Performance Area Management System)
 
-This is a simple RESTful API built using Python and Flask to manage **KPA (Key Performance Areas)** for employees.
-
-## What is KPA?
-
-KPA stands for **Key Performance Area** – specific goals or performance indicators that help evaluate an employee's contribution in a company.
+This is a simple RESTful API built using **Python** and **Flask** that allows managers to manage **Key Performance Areas (KPAs)** for employees. KPAs are used to evaluate employee performance across different measurable goals.
 
 ---
 
-## Features
+##  What is a KPA?
 
-- Add a new KPA  
-- Get all KPAs  
-- Get a KPA by ID  
-- Update a KPA  
-- Delete a KPA  
+**KPA** stands for **Key Performance Area**. These are clearly defined objectives or responsibilities assigned to employees — such as attendance, punctuality, sales, productivity — to measure their work performance.
 
 ---
 
-## Tech Stack
+##  Features
 
-- Language: **Python 3**
-- Framework: **Flask**
+-  Add a new KPA
+-  View all KPAs
+-  View a KPA by ID
+-  Update a KPA
+-  Delete a KPA
 
 ---
 
-##  How to Run
+##  Tech Stack
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/neemabhandari18/KPA-API
-   cd kpa-api
+- **Language**: Python 3  
+- **Framework**: Flask  
+- **Testing Tool**: Postman
 
+---
 
+##  How to Run This Project
 
-## Author
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/neemabhandari18/KPA-API.git
+cd KPA-API
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+> If you don’t have a `requirements.txt`, you can install Flask directly:  
+```bash
+pip install flask
+```
+
+### 3. Run the Flask App
+
+```bash
+python app.py
+```
+
+Your API will start on:  
+ `http://127.0.0.1:5000`
+
+---
+
+## Testing the API with Postman
+
+To use this API without coding, we recommend using **Postman** — a tool designed for testing APIs.
+
+### Install Postman:
+
+1. Go to: [https://www.postman.com/downloads](https://www.postman.com/downloads)  
+2. Download and install the version for your system  
+3. Click "Continue without account" to get started
+
+---
+
+##  How to Use This API (for KPA Managers)
+
+You can perform these actions in Postman after the app is running:
+
+|     Action       | Method |             URL               | Body Required|
+|------------------|--------|-------------------------------|--------------|
+| Add new KPA      | POST   | `http://127.0.0.1:5000/kpa`   |  Yes         |
+| View all KPAs    | GET    | `http://127.0.0.1:5000/kpa`   |  No          |
+| View one KPA     | GET    | `http://127.0.0.1:5000/kpa/1` |  No          |
+| Update a KPA     | PUT    | `http://127.0.0.1:5000/kpa/1` |  Yes         |
+| Delete a KPA     | DELETE | `http://127.0.0.1:5000/kpa/1` |  No          |
+
+---
+
+## JSON Body Samples (for Postman)
+
+###    Add a New KPA (POST)
+
+```json
+{
+  "name": "trackers",
+  "description": "Tracks on-time arrival to office"
+}
+```
+
+###   Update an Existing KPA (PUT)
+
+```json
+{
+  "name": "Updated KPA Name",
+  "description": "Updated description for the KPA"
+}
+```
+
+---
+
+##  requirements.txt
+
+```
+Flask==2.3.2
+```
+
+Install using:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 👩‍💻 Author
 
 **Neema Bhandari**  
-📚 BCA Student | 💻 Python Intern  
+🎓 BCA Student | 💻 Python Intern  
 🔗 GitHub: [@neemabhandari18](https://github.com/neemabhandari18)
-
-
-   --------------------------------------------------
-                   INSTALL POSTMAN 
-   --------------------------------------------------
-
-
-
-   ## 🧪 API Testing Tool Required
-
-To test this Flask API, we recommend using **Postman** – a free and powerful API testing tool.
-
-### How to Install Postman
-
-1. Go to the official website:  
-   [https://www.postman.com/downloads](https://www.postman.com/downloads)
-
-2. Download and install the version suitable for your operating system (Windows/macOS/Linux).
-
-3. Open the app and click on **"Continue without account"** to start using Postman immediately.
 
 ---
 
-###  How to Use Postman for Testing
+## 📄 License
 
-- `POST` → Add a new KPA:  
-  URL: `http://127.0.0.1:5000/kpa`
-
-  Body → raw → JSON:
-  ```json
-  {
-    "name": "Attendance",
-    "description": "Tracks daily presence"
-  }
-
-
-
-
+This project is for educational and internship use only.
