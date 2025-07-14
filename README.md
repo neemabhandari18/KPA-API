@@ -4,7 +4,7 @@
 
 This is a simple RESTful API built using Python and Flask to manage **KPA (Key Performance Areas)** for employees.
 
-## 📌 What is KPA?
+## What is KPA?
 
 KPA stands for **Key Performance Area** – specific goals or performance indicators that help evaluate an employee's contribution in a company.
 
@@ -33,3 +33,40 @@ KPA stands for **Key Performance Area** – specific goals or performance indica
    ```bash
    git clone https://github.com/neemabhandari18/KPA-API
    cd kpa-api
+
+   --------------------------------------------------
+                   INSTALL POSTMAN 
+   --------------------------------------------------
+
+
+
+   ## 🧪 API Testing Tool Required
+
+To test this Flask API, we recommend using **Postman** – a free and powerful API testing tool.
+
+### How to Install Postman
+
+1. Go to the official website:  
+   [https://www.postman.com/downloads](https://www.postman.com/downloads)
+
+2. Download and install the version suitable for your operating system (Windows/macOS/Linux).
+
+3. Open the app and click on **"Continue without account"** to start using Postman immediately.
+
+---
+
+###  How to Use Postman for Testing
+
+- `POST` → Add a new KPA:  
+  URL: `http://127.0.0.1:5000/kpa`
+
+  Body → raw → JSON:
+  ```json
+  {
+    "name": "Attendance",
+    "description": "Tracks daily presence"
+  }
+
+
+
+
