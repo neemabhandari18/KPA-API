@@ -34,6 +34,15 @@ KPA stands for **Key Performance Area** – specific goals or performance indica
    git clone https://github.com/neemabhandari18/KPA-API
    cd kpa-api
 
+
+
+## Author
+
+**Neema Bhandari**  
+📚 BCA Student | 💻 Python Intern  
+🔗 GitHub: [@neemabhandari18](https://github.com/neemabhandari18)
+
+
    --------------------------------------------------
                    INSTALL POSTMAN 
    --------------------------------------------------
