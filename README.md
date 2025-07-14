@@ -111,7 +111,7 @@ You can perform these actions in Postman after the app is running:
 ##  requirements.txt
 
 ```
-Flask==2.3.2
+Flask==3.1.1
 ```
 
 Install using:
